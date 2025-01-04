@@ -22,6 +22,7 @@ def add_expense():
 def view_expense():
     print("Processing Expense")
     invalid_input = False
+    dbt = []
 
     for dict1 in db:
         for key in dict1:
@@ -34,9 +35,10 @@ def view_expense():
             invalid_input = False
             continue
         else:
-            print(dict1)
-            # df = pd.DataFrame(db)
-            # print(df)
+            dbt.append(dict1)
+
+    df = pd.DataFrame(dbt)
+    print(df.head())
 
 
 # Option 3: Track Budget --
