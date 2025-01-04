@@ -14,6 +14,19 @@ As per requirement user input his/her choice in the system on Terminal and syste
 Functions:
 
 Following functions are defined inside the system 
+As soon as program starts it will ask for setting budget -
+Welcome to 'Personal Expense Tracker' System!!
+Set your Monthly Budget: 1000
+
+
+ $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+Input your choice --
+1. Add Expense
+2. View Expense
+3. Track Budget
+4. Save Expense
+5. Save Expense & Exit
+
 add_expense()
 User can add  expense
 Addition of data ask user to input in specific format
@@ -26,5 +39,12 @@ Responsible for tracking the budget
 Calculate expense and evaluate against initial budget set by the user
 Warn user in case of expense exceed the Budget
 save_expense()
-
-
+User can save expense 
+After saving expense - expense got saved in Excel file as output in persistence storage so that when user re-open system, previous filled data get restored
+load_expense()
+Load expense from csv file from persistent storage to program memory
+load_budget()
+While user set the budget first time, it also get stored in persistent storage
+Load budget function reload budget from previous entry
+display_menu()
+This function is responsible for displaying option to user every time
