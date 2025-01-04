@@ -112,7 +112,7 @@ def main():
         display_menu()
         option = int(input("Enter option to perform operation :"))
         if (option == 5):
-            saveExpense()
+            save_expense()
             break
         elif (option == 1):
             add_expense()
