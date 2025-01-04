@@ -1,0 +1,30 @@
+Expense Tracker System
+
+
+Description:
+System responsible for tracking Personal Expense of Month. User needs to input Monthly budget in the system initially and then the user can keep on Adding their expense. One can also see expenses done till date. System consist of following options to user -
+1. Add Expense
+2. View Expense
+3. Track Budget
+4. Save Expense
+5. Save Expense & Exit
+
+As per requirement user input his/her choice in the system on Terminal and system responds accordingly.
+
+Functions:
+
+Following functions are defined inside the system 
+add_expense()
+User can add  expense
+Addition of data ask user to input in specific format
+One local data list is created which keeps track of all entry 
+view_expense()
+System will track for user entry and if any entry is invalid then system will show error message to user
+Print only the correct entries in the system
+track_budget()
+Responsible for tracking the budget 
+Calculate expense and evaluate against initial budget set by the user
+Warn user in case of expense exceed the Budget
+save_expense()
+
+
